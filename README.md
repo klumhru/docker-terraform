@@ -9,4 +9,4 @@ Example running terraform in local project directory:
 
 ```bash
 docker run --rm -v ${PWD}:/terraform --workdir /terraform -u $(id -u) klumhru/terraform plan
-```
+```0.11.10
