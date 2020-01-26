@@ -5,10 +5,6 @@ inputs:
     description: 'Action to run'
     required: true
     default: init
-  args:
-    description: 'Additional parameters'
-    required: false
-    default: ''
   working-dir:
     description: 'Directory to perform actions in'
     required: false
@@ -19,5 +15,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.action }}
-    - ${{ inputs.args }}
     - ${{ inputs.working-dir }}
