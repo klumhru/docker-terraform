@@ -1,0 +1,13 @@
+name: 'Docker Terraform'
+description: 'Run a terraform action using a docker image'
+inputs:
+  action:  # id of input
+    description: 'Action to run'
+    required: true
+    default: init
+outputs: {}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.action }}
