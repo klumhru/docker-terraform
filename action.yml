@@ -5,9 +5,14 @@ inputs:
     description: 'Action to run'
     required: true
     default: init
+  args:
+    description: 'Additional parameters'
+    required: false
+    default: ''
 outputs: {}
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.action }}
+    - ${{ inputs.args }}
