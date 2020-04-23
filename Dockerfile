@@ -7,6 +7,8 @@ RUN apk -v --update add \
   groff \
   less \
   mailcap \
+  python3 \
+  python3-dev \
   && \
   pip install --upgrade awscli s3cmd python-magic && \
   apk add make && \
