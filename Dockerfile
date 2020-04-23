@@ -9,6 +9,7 @@ RUN apk -v --update add \
   mailcap \
   python3 \
   python3-dev \
+  zip \
   && \
   pip install --upgrade awscli s3cmd python-magic && \
   apk add make && \
